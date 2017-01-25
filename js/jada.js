@@ -43,13 +43,12 @@ function plopImg(event)
   var y = event.clientY;
   var imageObj = new Image();
   imageObj.onload = function() {
-    context.drawImage(imageObj, x - 143, y - 198);
+    context.drawImage(imageObj, x - 113, y - 106);
   };
- if ((Math.floor((Math.random() * 15) + 1)) == 15){
+ if ((Math.floor((Math.random() * 10) + 1)) == 10){
 	imageObj.src = 'img/jada.png';
 	altSound.play();
  } else {
-	//You Clever Dan
 	imageObj.src = 'img/jada.png';
 	sound.play();
  }
